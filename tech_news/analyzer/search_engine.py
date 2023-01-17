@@ -18,7 +18,7 @@ def search_by_date(date):
 def search_by_tag(tag):
     news_tuple = []
     for new in search_news({"tags": {"$regex": tag, "$options": "i"}}):
-        news_tuple.append(new["title"], new["url"])
+        news_tuple.append((new["title"], new["url"]))
     return news_tuple
 
 

@@ -28,5 +28,5 @@ def search_by_category(category):
     for new in search_news(
         {"category": {"$regex": category, "$options": "i"}}
     ):
-        news_tuple.append(new["title"], new["url"])
+        news_tuple.append((new["title"], new["url"]))
     return news_tuple

@@ -14,7 +14,7 @@ def top_5_categories():
     for new in find_news():
         categories.append(new["category"])
     categories_count = []
-    for name, _ in Counter(categories).most_common(5):
+    for name, count in Counter(sorted(categories)).most_common(5):
         categories_count.append(name)
     return categories_count
 

@@ -81,3 +81,6 @@ def get_tech_news(amount):
         tech_news.append(scrape_news(fetch(new)))
     create_news(tech_news)
     return tech_news
+
+
+get_tech_news(60)

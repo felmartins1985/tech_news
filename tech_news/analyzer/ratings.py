@@ -12,7 +12,9 @@ def top_5_news():
     comments_sorted = sorted(
         title_sorted, key=itemgetter("comments_count"), reverse=True
     )
-    return comments_sorted[:5]
+    return [(comment["title"], comment["url"]) for comment in comments_sorted][
+        :5
+    ]
 
 
 # Requisito 11

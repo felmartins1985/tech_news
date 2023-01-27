@@ -1,8 +1,10 @@
 # Projeto Tech News 👨🏻‍💻🗞
 
-Consiste em uma aplicação para realização de consultas de notícias sobre tecnologia presentes no [blog da Trybe](https://blog.betrybe.com/) para realização da raspagem dos dados e armazenar em um banco de dados.
+Consiste em uma aplicação para realização de consultas de notícias sobre tecnologia presentes no [blog da Trybe](https://blog.betrybe.com/), para realização da raspagem dos dados e armazenar em um banco de dados.
 
 * Construído utilizando Python e MongoDB
+
+<br />
 
 <details>
   <summary><strong>Descrição das funções criadas:</strong></summary><br />
@@ -21,9 +23,36 @@ Consiste em uma aplicação para realização de consultas de notícias sobre te
 | `top_5_news` | A partir dos dados presentes no banco, retorna as cinco notícias mais populares | `tech_news/analyzer/ratings.py` |
 | `top_5_categories` | A partir dos dados presentes no banco, retorna as cinco categorias com mais ocorrências | `tech_news/analyzer/ratings.py` |
 | `analyzer_menu` | A partir das funções criadas, retorna as informações mediante a solicitação pela linha de comando | `tech_news/menu.py` |
-
-<br />
 </details>
+
+
+### Estrutura do Projeto
+
+```
+.
+├── tech_news
+│   ├── analyzer
+│   │   ├── 🔹ratings.py
+│   │   └── 🔹search_engine.py
+│   ├── 🔸database.py
+│   └── 🔹menu.py
+│   └── 🔹scraper.py
+├── tests
+│   └── 🔸__init__.py
+├── 🔸dev-requirements.txt
+├── 🔸docker-compose.yml
+├── 🔸Dockerfile
+├── 🔸pyproject.toml
+├── 🔸README.md
+├── 🔸requirements.txt
+├── 🔸setup.cfg
+└── 🔸setup.py
+
+Legenda:
+🔸 Arquivos desenvolvidos pela Trybe (não foram alterados).
+🔹 Arquivos desenvolvidos por mim.
+
+```
 
 
 ### Instruções
